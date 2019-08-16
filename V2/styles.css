@@ -1,0 +1,456 @@
+@charset "utf-8"; 
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Project
+   V2
+   
+   Author: Christopher Piwinski	
+   Date:   8/8/2019
+   
+   Styles for project
+   
+   Filename: styles.css
+
+*/
+/*===========================================================
+ Window and Body Styles 
+===========================================================*/
+html {/* M4LO2 Demonstrate the use of background images (CSS) this allows me to include a picture for a background instead of just color */
+   background-color: #83c72a;
+   background-image: url(http://www.transparenttextures.com/patterns/cartographer.png);
+/* academic fair use, cited from https://www.transparenttextures.com/cartographer.html */
+   height: 100%;
+   background-attachment: fixed;
+}
+
+header, main, section, ul, nav, li, a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;	
+}
+
+body {
+   background-color: #0da188;
+   /*academic fair use, cited from https://www.transparenttextures.com/cartographer.html */
+   font-family: Tahoma, Geneva, sans-serif, sans-serif; 
+   /*academic fair use, cited from https://www.w3schools.com/cssref/css_websafe_fonts.asp */
+   font-size: large;
+   display: block;
+   opacity: 0.80;/*M4LO6 Demonstrate the use of opacity/transparency for images (see "Creating
+   Semi-Transparent Objects" in Tutorial 4 (4-9 in the e-book)) (CSS), lets you see through an image. */
+}
+
+body { 
+	width: 85%;
+	min-width: 640px;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100%;
+}
+/*=========================================================
+ Page Styles 
+=========================================================*/
+header > figure > img {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+
+}	
+
+header.heading h1 {
+	color: blue; 
+	background-color: #b5cc88;
+	height: 50px;
+	border-bottom: 2px solid hsl(120, 100%, 75%); 
+	/*academic fair use, cited from https://www.w3schools.com/cssref/css_colors_legal.asp */
+	margin-top: 25px;
+    line-height: 45px;
+	}
+
+figure figcaption {
+	background-color: YellowGreen;
+	font-family: 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+	font-style: italic;
+	padding: 10px 0;
+	text-align: center;
+}
+
+header > h1 {
+	text-align: center;
+	font-size: 38px;
+	color: blue; 
+	background-color: #b5cc88;
+	border-bottom: 2px solid hsl(120, 100%, 75%); 
+	/*academic fair use, cited from https://www.w3schools.com/cssref/css_colors_legal.asp */
+	margin-top: 25px;
+}
+
+nav {
+	display: table;
+	width: 100%;
+	background-color: #b5cc88;
+	border-bottom: 2px solid hsl(120, 100%, 75%);
+    border-bottom: rgb(128, 255, 128);	
+	/*academic fair use, cited from https://www.w3schools.com/cssref/css_colors_legal.asp */
+}
+
+nav > ul {
+	display: table-row;
+}
+
+nav > ul > li {
+	display: table-cell;
+	text-align: center;
+}
+
+nav > ul > li > a { 
+	display: block;
+	text-decoration: none;
+}
+
+#nav_icon {
+      display: none;
+   }
+
+nav > ul > li > a:link, nav ul li a:visited {
+	color: #222;
+	text-decoration: none;
+}
+
+nav ul li a:hover , nav > ul > li > a:active {
+	background-color: #222;
+	color: green;
+	text-decoration: underline;
+}
+
+body > header > nav a {
+	display: block;
+	width: 100%;
+	
+}
+
+body > main > img {
+	clear: right;
+	float: right;
+	margin-right: 10.5px;
+	margin-bottom: 20px;
+}
+
+#type > img {
+	
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+    width: 20%;
+}
+
+body > main #creator {
+	width: 50%;
+	margin-left: 125px;
+	margin-right: 450px;
+}
+
+body > main > p {
+	text-align: center;
+	width: 93%;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+body > main > p {/*M4LO3 Demonstrate the use of rounded corners for borders (CSS) puts up a border a rounded corner box around my content */
+	border: 4px solid rgb(45, 93, 62);
+	border-radius: 30px;
+	box-shadow: rgba(51, 91, 51, 0.4) 0px 0px 20px 10px; /*M4LO5 Demonstrate the use of text or box shadowing (CSS, note one 
+	of these two in your CSS and explain its impact on the HTML adds ,ore depth or just a shadow in given areas */
+	background: radial-gradient(SeaGreen, rgb(151,222,151),
+	             rgb(81,  125,  81)); /*M4LO4 Demonstrate the use of gradients (CSS) blends colors together creating mixed colors*/
+	margin-left: 10px;	
+margin-right: 25px;	
+	margin-top: 25px;
+}
+
+body > main > h2 {
+	border: 4px solid rgb(45, 93, 62);
+	border-radius: 30px;
+	box-shadow: rgba(51, 91, 51, 0.4) 0px 0px 20px 10px; 
+	background: radial-gradient(SeaGreen, rgb(151,222,151),
+	             rgb(81,  125,  81));
+	margin-left: 200px;	
+	margin-right: 450px;	
+	margin-top: 25px;
+	text-align: center;
+	
+}
+
+#license > p {
+	border: 4px solid rgb(45, 93, 62);
+	border-radius: 10px;
+	box-shadow: rgba(51, 91, 51, 0.4) 0px 0px 20px 10px; 
+	background: radial-gradient(SeaGreen, rgb(151,222,151),
+	             rgb(81,  125,  81));
+	margin-left: 10px;	
+}
+
+#waterfowl > img {
+	clear: right;
+	float: right;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	width: 30%;
+}
+
+#hunting > ol > li {	
+	border: 4px solid rgb(45, 93, 62);
+	border-radius: 5px;
+	box-shadow: rgba(51, 91, 51, 0.4) 0px 0px 20px 10px; 
+	background: radial-gradient(SeaGreen, rgb(151,222,151),
+	             rgb(81,  125,  81));
+	margin-left: 10px;	
+	
+	margin-bottom: 20px;
+	width: 33%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+}
+
+#dogs > img { /*M4LO8 Demonstrate the use of transformations for 2D or 3D images 
+(CSS, use the transform property as covered in Tutorial 4 and explain its impact on the HTML) rotated a picture 30 degrees. */
+	transform: rotate(30deg);
+	box-shadow: rgb(101,101,101) 10px -10px 25px;
+	margin-top: 40px;
+	width: 24%;
+	float: right;
+}
+
+.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+article#type > li > img {
+    display: block;
+	width: 25%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+footer nav a:link, footer nav a:visited {
+	color: #222;
+	text-decoration: none;
+}
+
+footer nav a:hover , footer nav a:active {
+	background-color: #222;
+	color: green;
+	text-decoration: underline;
+}
+
+footer > nav > h2 {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	text-align: center;
+	border-bottom: 2px solid hsl(120, 100%, 75%);
+}
+footer > nav a {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	text-align: center;
+	border-bottom: 2px solid hsl(120, 100%, 75%);
+	text-decoration: none;
+}
+/*==============================================================
+ Table Styles 
+==============================================================*/
+table#reports {/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table 
+styles together and note the overall impact they have on the HTML) formatting a table in css lets you change the size of the box to its background color*/
+	background-image: linear-gradient(to bottom, rgb(0,100,0), black);
+	border: 5px solid gray;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#reports th, table#reports td {
+	border: 3px solid gray;
+	line-height: 1.4em;
+	padding: 8px;
+}
+
+table#reports th {
+	background: linear-gradient(to bottom, rgb(0,100,0), black);
+	color: #f0e68c;
+	font-weight: normal;
+}
+
+table#reports td {
+	color: #ffff00;
+	font-size: 0.9em;
+	vertical-align: center;
+}
+
+/* Col Styles */
+#firstCol {
+	width: 20%;
+}
+
+#dataCols {
+	width: 10%
+}
+
+/* Table Header Styles */
+thead tr {
+	height: 50px;
+}
+
+main > table#reports > thead > tr:first-of-type > th:first-of-type {
+	font-size: 2em;
+}
+
+main > table#reports > thead > tr:not(:first-of-type) > th:not(:first-of-type) {
+	background-color: transparent;
+	color: SandyBrown;
+}
+
+/* ===================================================================
+   Base Flex Styles
+   ===================================================================
+*/
+
+section ul { /*M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where 
+you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page) takes my ul and puts it in a wrap in my page */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+} /*M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what
+ flexbox container properties you use and their impacts, for one CSS selector using them), this container targets all my content under 
+section ul and i could format it to wrap in css to show up differently in html */
+
+section ul li {
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 200px;
+	justify-content: center;
+	align-items: center;
+	margin-left: 35px;
+}
+
+
+/*=====================================================================
+Mobile styles: 0px to 480px
+======================================================================*/
+@media only screen and (max-width: 480px) { /*M5LO3 Use media queries to format a page differently for phones vs. PCs. 
+(CSS, note where these are in your CSS and describe the overall impact they have on the site) this is used to set up 
+operation for mobile phone use or anything less than 480px */
+nav.icon ul li a {
+    text-align: center;
+    text-indent: 12px;
+	 
+}
+      
+nav.icon a {
+    font-size: 1.5em;
+    line-height: 2.2em;
+		
+}
+	
+a#nav_icon {
+	display: block;
+}
+	
+nav.icon ul {
+	display: none;
+}
+
+a#nav_icon:hover+ul, nav.icon ul:hover {
+      display: block;
+}
+	
+#nav_icon:hover+ul, nav.icon ul:hover {
+	display: block;
+}
+
+body main {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+} 
+
+body main p {/*M5LO6 Demonstrate use of properties of flexbox items (CSS, document what flexbox
+ item properties you use and their impacts, for one CSS selector using them) in mobile phone view this crunched my
+ information into a format that is readable in mobile mode */
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 200px;
+	justify-content: center;
+	align-items: center;
+	margin-left: 35px;
+} 
+ 
+
+
+body > main > p { 
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+ 
+}
+
+
+/*=====================================================================
+Tablet styles: 481px and greater
+======================================================================*/
+@media only screen and (min-width: 481px) {
+
+nav.icon ul {
+   display: -webkit-flex;
+   display: flex;
+	   
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+}
+   
+nav.icon li {
+   -webkit-flex: 1 1 auto;
+   flex: 1 1 auto;
+}
+
+
+body > main > p {
+	text-align: center;
+	margin-left: 25px;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+nav.icon ul li ul {
+	display: none;
+}
+
+}	
+
+
+/*=====================================================================
+Pull down menu
+======================================================================*/
+ul.submenu {
+	display: none;	
+}
+
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+	display: block;
+}
+/*M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu
+ is on your site and how it behaves) lets me create a drop down box with its own new set of links not part of the main ones but a subset of one main link*/
