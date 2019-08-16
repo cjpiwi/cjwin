@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     
+     <!--
+     New Perspectives on HTML5 and CSS3, 7th Edition
+     Project
+     V3
+    
+     Author: Christopher Piwinski	
+     Date:   8/16/2019
+
+     Filename: index.html
+     -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="washington, hunting, big game, small game, water fowl, upland" />
+    <title>Hunting in Washington State</title>
+    <link href="resetStyles.css" rel="stylesheet" media="all"/>
+    <link href="styles.css" rel="stylesheet" media="screen" />
+</head>
+
+
+<body>
+  
+  <header class="heading">
+       <h1>HUNTING IN WASHINGTON</h1>
+            <figure>
+            <img src="2015-9-12_Sunrise_KLoving_web.jpg" alt="Rainier" />
+       <!--used under academic fair use, https://www.nps.gov/mora/learn/nature/naturalfeaturesandecosystems.htm-->
+            <figcaption>WA State Mt. Rainier</figcaption>
+            </figure>
+       <nav class="icon"><a id="nav_icon" href="#"><img src="nav_icon.png" alt="" /></a>
+           <ul id="upperNav">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="Regulation.html">Regulation</a></li>
+               <li><a href="Types.html">Types of hunting</a></li>
+               <li><a href="About.html">About</a></li>
+               <li><a href="#" class="submenuTitle">WA State Licenses &#8594;</a>
+                    <ul class="submenu">
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/big-game">Big Game</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/small-game">Small Game</a></li>
+                        <li><a href="https://wdfw.wa.gov/hunting/special-hunts">Special Hunt Permit</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/hunt-contest">Hunt Contest Permit</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/free-national-state-guard-hunting-licenses">Free National and State Guard hunting licenses</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/field-trial">Field Trial Permit</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/trapping">Special trapping permit for a nuisance wildlife problem</a></li>
+                    </ul>
+                </li>    
+           </ul>
+       </nav>            
+   </header>
+   
+   <main>
+      <img src="220px-Deer_in_Mazama_.jpg" alt="deer" usemap="#animal_map" />
+      <!--used under academic fair use, https://de.wikipedia.org/wiki/Mazama_(Washington)-->
+           <map name="animal_map">
+                <area shape="rect" coords="78,64,155,138" href="Types.html" alt="Deer" />           
+             </map>		 
+      <p><br />
+           In Washington State there are many activities to do for hunting. Although it is somewhat hard to find areas to hunt in 
+           Western Washington, all it takes is to know where to look. Depending in the area that you are located
+           in <a href="https://geodataservices.wdfw.wa.gov/huntregs/">(area search)</a>
+           you can hunt certain species of animals,
+           given you have all the required materials and documentation. <a href="Regulation.html#regs">Required Regulations</a> <br />
+        <br/>
+     </p>
+       <p>
+           You can hunt for small game or big game in WA State.<br /> <strong>Small game</strong> consist of small animals such as: rabbits,
+           pheasants, geese or ducks. While <strong>big game</strong> consist of larger animals such as: deer, elk, black bear, cougar or mountain goat.
+               <br/>
+               <br/>
+       </p>   
+
+       <p id="video">  Click the play button to view  <br/> <cite>https://www.videvo.net/video/deer-grazing-in-park/3587/</cite> </p> 
+       <video controls><!--M8LO8 Demonstrate the use of the <video> element for embedding video in a Web page (HTML) this enables me to add a video to my site -->
+            <source src="Deer_Grazing_1_Videvo_Trim.mp4" type="video/mp4" />
+            <source src="Deer_Grazing_1_Videvo_Trim.mp4" type="video/webm" />        
+            <p><em>To play this video clip, your browser needs to support HTML5.</em></p>
+         </video>
+   </main>  
+   
+   <footer>
+       <nav class="vert" id="links">
+          <h2>EXTERNAL LINKS</h2> 
+          <a href="https://wdfw.wa.gov/hunting/regulations">WA hunting</a>
+          <a href="https://www.atg.wa.gov/hunting-law">WA Law</a>
+          <a href="https://www.hunter-ed.com/washington/hunting-license.html">Hunter Ed</a>
+          <a href="https://geodataservices.wdfw.wa.gov/huntregs/">Area Search</a>  
+          
+       </nav>  
+   
+   </footer>
+   
+</body>
+
+
+
+</html>

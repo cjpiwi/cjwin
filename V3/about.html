@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Project
+    V3
+    
+    Author: Christopher Piwinski	
+    Date:   8/16/2019
+
+    Filename: about.html
+   -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+   
+    <link href="styles.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+   <header>
+       <h1>ABOUT</h1>
+          <figure>
+            <img src="2015-9-12_Sunrise_KLoving_web.jpg" alt="Rainier" />
+       <!--used under academic fair use, https://www.nps.gov/mora/learn/nature/naturalfeaturesandecosystems.htm-->
+            <figcaption>WA State Mt. Rainier</figcaption>
+            </figure>
+   </header>
+   <nav class="icon"><a id="nav_icon" href="#"><img src="nav_icon.png" alt="" /></a>
+       <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="Regulation.html">Regulation</a></li>
+           <li><a href="Types.html">Types of hunting</a></li>
+           <li><a href="About.html">About</a></li>
+           <li><a href="#" class="submenuTitle">WA State Licenses &#8594;</a>
+                    <ul class="submenu">
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/big-game">Big Game</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/small-game">Small Game</a></li>
+                        <li><a href="https://wdfw.wa.gov/hunting/special-hunts">Special Hunt Permit</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/hunt-contest">Hunt Contest Permit</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/free-national-state-guard-hunting-licenses">Free National and State Guard hunting licenses</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/field-trial">Field Trial Permit</a></li>
+                        <li><a href="https://wdfw.wa.gov/licenses/hunting/trapping">Special trapping permit for a nuisance wildlife problem</a></li>
+                    </ul>
+                </li>  
+       </ul>         
+   </nav>
+   <main id="waterfowl">
+       <img src="images9CVQST71.jpg" alt="" />  
+       <!--used under academic fair use, https://www.flickr.com/photos/usfwshq/6077561308-->       
+           <p id="creator">
+            Author: Christopher Piwinski <br />
+            Course: Web Development I CIS 155 SU19 2175/2176 <br />
+            Date:   8/8/2019 <br />
+           </p>  
+           <br/>
+           <br/>
+           
+           
+           <h2>V1 update</h2>
+           <p>           
+           I have created my first website about hunting in Washington State. <br/>I have created 5 pages to include
+           my cascading style sheet (css). The css is what makes my site look like the way it does, it compliments the html
+           by giving it structure. There are navigational links on all pages so you can navigate everywhere you need 
+           to in my site. Included are also external hyperlinks that provide additional information on hunting in 
+           Washington State. Information is also available for the regulations in Washington for hunting and a little more 
+           on what type of hunting you can do.           
+           </p>
+           <br/>
+        
+           <h2>V2 update</h2>
+           <p>
+            I have continued to add more to my website. <br/>I have added a drop down menu that 
+            takes you to an external website that will lead you to purchasing certain licenses or permits. 
+            I have added mobile and tablet conversion<br/> for more of a diverse choice for viewing my website. I have also 
+            added a table to show how many animals that were reported harvested for the year 2018. I have also included border boxes with radial gradient
+            sea green colors throughout my pages to break apart or separate topics.            
+           </p>
+           <br/>
+           
+           <h2>V3 update</h2>
+           <p>
+            At present, I have continued to add more to my website. <br/>I have added a comment or suggestion
+            box to my website on my about page. <br/> This enables users to comment or suggest changes to the website or 
+            what they would like to see more of. Included in my update I added 4 different videos. 1 video is on the home page while the other 3 are 
+            on the types of hunting page. I also added animation to my footer navigation links. <br/>I hope you enjoy my website just as much as I did creating it.            
+           </p>
+   </main>
+   
+   <section>
+       <h3>Comments or Suggestions</h3>
+       <p>Required *</p>
+       <form id="survey" action="http://www.example.com/about/" 
+            method="post"> <!--M7LO5 Demonstrate the use of a text box in a form, allows the form to be submitted to an external site.-->
+            
+            <div class="formRow">
+                <label for="titles">Title</label>
+                <input id="titles" type="text" list="titleList"/>
+                 <datalist id="titleList"><!--M7LO8 Demonstrate the use of a selection list in a form, gives a choice for the user to select from.-->              
+                     <option value="Mr.">
+                     <option value="Mrs.">
+                     <option value="Ms.">                                      
+                </datalist>
+            </div>
+            
+            <div class="formRow">
+                <label for="firstName">First Name*</label>
+                <input id="firstName" type="text" required />
+            </div>
+            
+            <div class="formRow">
+                <label for="lastName">Last Name*</label>
+                <input id="lastName" type="text" required />
+            </div>
+            
+            <div class="formRow">
+                <label for="mailbox">E-mail*</label>
+                <input id="mailbox" type="email" required />
+            </div>
+            
+            <div class="formRow">
+                <label for="commentBox">Comments*</label>
+                <textarea id="commentBox" type="text" required></textarea><!--M7LO9 Demonstrate the use of a text area in a form, lets the user add comments in a larger box window.-->
+            </div>
+            
+            <P id="button">         
+            <input type="submit" value="Submit" /><!--M7LO10 Demonstrate the use of a submit button in a form, allows me to create a button for submitting my survey form.-->       
+            </p>
+            
+       </form>
+   </section>
+   
+   <footer>
+       <nav class="vert" id="links">
+          <h2>EXTERNAL LINKS</h2>   
+          <a href="https://wdfw.wa.gov/hunting/regulations">WA hunting</a>
+          <a href="https://www.atg.wa.gov/hunting-law">Law</a>
+          <a href="https://www.hunter-ed.com/washington/hunting-license.html">Hunter Ed</a>
+          <a href="https://geodataservices.wdfw.wa.gov/huntregs/">Area Search</a>        
+       </nav>  
+     
+   </footer>
+</body>
+
+
+
+</html>
