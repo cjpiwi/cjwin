@@ -570,8 +570,7 @@ p#video {
  
 body > main > p {
 	margin-top: 50px;
-	margin-left: auto;
-	float: center;
+	margin-left: auto;	
 }
 
 body > main > p > iframe {
